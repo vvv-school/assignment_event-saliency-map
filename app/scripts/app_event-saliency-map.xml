@@ -1,0 +1,21 @@
+<application>
+<name> event-saliency-map </name>
+
+    <!-- ADD YOUR MODULES HERE-->
+    <!-- YOU CAN USE YOUR assignment_event-orientation-filter module to produce a response -->
+
+
+    <!-- MODIFY THE PARAMETERS OF THE SALIENCY MAP -->
+    <!-- THE FINAL APP OUTPUT IS: /vOrMap/vBottle:o -->
+    <module>
+        <name> solution_event-saliency-map </name>
+        <parameters>--name /vOrMap --strict true </parameters>
+        <node>localhost</node>
+    </module>
+    <!-- ADD YOUR CONNECTIONS HERE -->
+    <!-- THE DATA COMES FROM /zynqGrabber/vBottle:o -->
+
+    
+    
+
+</application>
