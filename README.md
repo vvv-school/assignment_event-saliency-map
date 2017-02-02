@@ -18,6 +18,10 @@ You have to visualise:
 1. The input event-stream (using [vFramer])
 1. The output of the [Selective Attention Module]   (spiking and subthreshold)
 
+Here is how it shou;d look like:
+
+![evt_salmap](./misc/assignment3.png)
+
 You will run this assignment with the [_Dataset_event-saliency-map_]() dataset. The dataset has bars at different orientations and an object with multiple edges at different orientations. Each feature map will contribute to the energy of the region where the features superimpose and the saliency map will have maximum activity there. The centre and dimension of the maximum activity region will define a region of interest.
 
 To get a bonus :-)
@@ -25,7 +29,7 @@ To get a bonus :-)
 1. Find the maximum of the Saliency Map and send it using a YARP bottle (non-event type)
 1. Find the size of the Region of Interest and send it.
 
-This final work will make you proud and will be extremely useful during the last integration day.
+This final work will make you proud, will be extremely useful during the last integration day and will give you more points towards the team leadership....
 
 Once done, you can test your code **Automatically**: [running the script **test.sh**](https://github.com/vvv-school/vvv-school.github.io/blob/master/instructions/how-to-run-smoke-tests.md) in the **smoke-test** directory. 
 
