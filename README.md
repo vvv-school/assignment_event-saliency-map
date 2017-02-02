@@ -18,7 +18,7 @@ You have to visualise:
 1. The input event-stream (using [vFramer])
 1. The output of the [Selective Attention Module]   (spiking and subthreshold)
 
-Here is how it shou;d look like:
+Here is how it should look like:
 
 ![evt_salmap](./misc/assignment3.png)
 
