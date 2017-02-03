@@ -4,7 +4,7 @@ Event-driven saliency map
 Create an event-driven saliency map based on the output of the feature maps created with oriented filters
 
 # Prerequisites
-By now, you should know enough about event-driven feature maps ([Orientation Filter](https://github.com/vvv-school/solution_event-orientation-filter)) and _yarpmanager scripts_ (e.g. (https://github.com/vvv-school/solution_event-orientation-filter)).
+By now, you should know enough about event-driven feature maps ([Orientation Filter](https://github.com/vvv-school/solution_event-orientation-filter)) and _yarpmanager scripts_ (e.g. [in our last assignment](https://github.com/vvv-school/assignment_event-orientation-filter)).
 
 # Assignment
 You have to implement a hierarchical model of selective attention, based on the feature maps output developed in the previous assignment.
@@ -21,7 +21,7 @@ To debug the assignment we recommend you to visualise:
 1. The subthreshold of the saliency map
 1. The spiking output of the saliency map
 
-to correctly tune the parameters.
+to correctly tune the parameters. The angles should approximately be 0, 60, 90, and 120 degrees.
 
 Here is an example of how your app could look:
 
