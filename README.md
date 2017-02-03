@@ -9,20 +9,29 @@ By now, you should know enough about event-driven feature maps ([Orientation Fil
 # Assignment
 You have to implement a hierarchical model of selective attention, based on the feature maps output developed in the previous assignment.
  
-To accomplish this task you have to modify the [app](./app/scripts) to instantiate multiple oriented filter maps, each taking as input the event stream from the cameras and sending their output bottles to the [Selective Attention](https://github.com/vvv-school/solution_event-saliency-map/tree/master/src) module. This module has been completed for you, for the feature map modules you should use the code you developed in the [Orientation Filter] assignment, if it is not working you can use the solution provided (https://github.com/vvv-school/solution_event-orientation-filter). 
-You have to correctly tune the parameters of the modules (tau, Te, theta, strict, ...).
+To accomplish this task you have to modify the [app](./app/scripts) to instantiate multiple oriented filter maps, each taking as input the event stream from the cameras and sending their output bottles to a provided saliency-map module. In reality, the saliency-map is very similar to the orientation-filter with some small changes. A solution to the orientation-filter is provided in this assignment if you did not manage to complete assignment 2, but:
+**If you prefer to use your own solution to orientation filter (highly recommended) overwrite event-orientation-filter.cpp and event-orientation-filter.hpp with your files from assignment 2**
 
-You have to visualise:
+You have to correctly tune the parameters of the modules by providing the appropriate arguments in the app (tau, Te, theta, strict, ...).
 
-1. The output of one feature map (spiking or subthreshold)
+To debug the assignment we recommend you to visualise:
+
 1. The input event-stream (using [vFramer])
-1. The output of the [Selective Attention Module]   (spiking and subthreshold)
+1. The output of a feature map (spiking or subthreshold)
+1. The subthreshold of the saliency map
+1. The spiking output of the saliency map
 
-Here is how it should look like:
+to correctly tune the parameters.
+
+Here is an example of how your app could look:
 
 ![evt_salmap](./misc/assignment3.png)
 
 You will run this assignment with the [_Dataset_event-saliency-map_]() dataset. The dataset has bars at different orientations and an object with multiple edges at different orientations. Each feature map will contribute to the energy of the region where the features superimpose and the saliency map will have maximum activity there. The centre and dimension of the maximum activity region will define a region of interest.
+
+Here is what you might see when it is working:
+
+![goalimage](./misc/assignment3-goal.png)
 
 To get a bonus :-)
 
