@@ -9,4 +9,5 @@
 echo "stop" | yarp rpc /yarpdataplayer/rpc:i
 echo "quit" | yarp rpc /yarpdataplayer/rpc:i
 
-rm fixtures/fixture.xml
+rm -rf fixtures
+

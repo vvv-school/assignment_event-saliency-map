@@ -8,7 +8,7 @@
     <!-- MODIFY THE PARAMETERS OF THE SALIENCY MAP -->
     <!-- THE FINAL APP OUTPUT IS: /vOrMap/vBottle:o -->
     <module>
-        <name> solution_event-saliency-map </name>
+        <name> assignment_event-saliency-map </name>
         <parameters>--name /vOrMap --strict true </parameters>
         <node>localhost</node>
     </module>

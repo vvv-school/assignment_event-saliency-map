@@ -27,9 +27,9 @@ icubcontrib_set_default_prefix()
 include_directories(${YARP_INCLUDE_DIRS} ${eventdriven_INCLUDE_DIRS})
 
 #orientation-filter
-add_executable(solution_event-orientation-filter ${CMAKE_SOURCE_DIR}/src/event-orientation-filter.h ${CMAKE_SOURCE_DIR}/src/event-orientation-filter.cpp)
-target_link_libraries(solution_event-orientation-filter ${YARP_LIBRARIES} eventdriven)
-install(TARGETS solution_event-orientation-filter DESTINATION bin)
+add_executable(assignment_event-orientation-filter ${CMAKE_SOURCE_DIR}/src/event-orientation-filter.h ${CMAKE_SOURCE_DIR}/src/event-orientation-filter.cpp)
+target_link_libraries(assignment_event-orientation-filter ${YARP_LIBRARIES} eventdriven)
+install(TARGETS assignment_event-orientation-filter DESTINATION bin)
 
 #saliency-map
 add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/event-saliency-map.h ${CMAKE_SOURCE_DIR}/src/event-saliency-map.cpp)

@@ -15,6 +15,7 @@ else
    sleep 1
 fi
 
+mkdir fixtures
 ln -s ../../app/scripts/app_event-saliency-map.xml fixtures/fixture.xml
 
 yarpdataplayer &
