@@ -11,3 +11,8 @@ echo "quit" | yarp rpc /yarpdataplayer/rpc:i
 
 rm -rf fixtures
 
+if [ "${kill_yarp}" == "yes" ]; then
+  killall -9 yarpserver
+fi
+
+unset kill_yarp
