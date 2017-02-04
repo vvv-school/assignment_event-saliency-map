@@ -15,9 +15,6 @@ else
    sleep 1
 fi
 
-mkdir fixtures
-ln -s ../build/build-code/share/ICUBcontrib/applications/app_event-saliency-map.xml fixtures/fixture.xml
-
 yarpdataplayer &
 sleep 1
 echo "load $ROBOT_CODE/datasets/Dataset_event-saliency-map" | yarp rpc /yarpdataplayer/rpc:i
