@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suit name="Test Assignment Event Saliency Map">
+<suite name="Test Assignment Event Saliency Map">
     <description>Testing the assignment on the Event Saliency Map </description>
     <environment>  </environment>
     <fixture param="--fixture app_event-saliency-map.xml"> yarpmanager </fixture>
     <test type="dll"> TestAssignmentEventSaliencyMap </test>
-</suit>
+</suite>
