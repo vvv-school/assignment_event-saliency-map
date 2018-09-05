@@ -143,12 +143,12 @@ void spikingModel::onRead(vBottle &input)
 
     //and iterate through each one
     for(vQueue::iterator qi = q.begin(); qi != q.end(); qi++) {
-        event<AddressEvent> v = getas<AddressEvent>(*qi);
+        event<AddressEvent> v = as_event<AddressEvent>(*qi);
 
-        updateModelUsingFilter(v->getX(), v->getY(), (int)((yarp::os::Time::now()-starttime) * 1000000));
+        updateModelUsingFilter(v->x, v->y, (int)((yarp::os::Time::now()-starttime) * 1000000));
 
         //and creating a spiking event if needed
-        if(this->spikeAndReset(v->getX(), v->getY()))
+        if(this->spikeAndReset(v->x, v->y))
             outputBottle.addEvent(*qi);
 
     }

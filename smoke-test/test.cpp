@@ -28,9 +28,9 @@ private:
 
         ev::vQueue q = input.getAll();
         for(ev::vQueue::iterator qi = q.begin(); qi != q.end(); qi++) {
-            ev::event<ev::AddressEvent> v = ev::getas<ev::AddressEvent>(*qi);
-            int vx = v->getX();
-            int vy = v->getY();
+            ev::event<ev::AddressEvent> v = ev::as_event<ev::AddressEvent>(*qi);
+            int vx = v->x;
+            int vy = v->y;
             if(vx >= x && vx <= x + width && vy >= y && vy <= y + height)
                 inlier++;
             else

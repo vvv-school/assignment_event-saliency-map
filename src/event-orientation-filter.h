@@ -3,11 +3,7 @@
 #include <yarp/sig/Image.h>
 #include <iCub/eventdriven/all.h>
 
-using ev::event;
-using ev::vBottle;
-using ev::AddressEvent;
-using ev::vQueue;
-using ev::getas;
+using namespace ev;
 
 class spikingModel : public yarp::os::BufferedPort<vBottle>
 {
